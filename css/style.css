@@ -7,3 +7,80 @@
 body {
   font-style: sans-serif;
 }
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* MAIN WINDOW */
+#main-window {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* SIDEBAR */
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+}
+
+/* spotify menu */
+.spotify-menu {
+  flex-grow: 1;
+  background: #aa0000; /* debug */
+}
+
+/* spotify account */
+.account {
+  height: 60px;
+  background: #550000; /* debug */
+}
+
+/* MAIN CONTENT */
+#content {
+  position: relative;
+  flex-grow: 1;
+  background: #141921;
+}
+
+/* main content top bar */
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  background: #080b11;
+  z-index: 2;
+}
+
+/* main content scrollable section */
+.content-scrollable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 85px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+}
+
+/* FOOTER */
+#player {
+  height: 80px;
+  background: #272727;
+}
+
+/* TABLET DEVICES */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* SMALL SCREEN DEVICES */
+@media screen and (max-width: 600px) {
+
+}
