@@ -6,35 +6,63 @@
 
 body {
   font-style: sans-serif;
+  color: #fff; /* debug */
 }
 
-#app {
+/* UTILITIES */
+.flex {
   display: flex;
+}
+
+.unstyled-list {
+  list-style: none;
+}
+
+/* SPOTIFY */
+#app {
   flex-direction: column;
   height: 100vh;
 }
 
 /* MAIN WINDOW */
 #main-window {
-  display: flex;
   flex-grow: 1;
 }
 
 /* SIDEBAR */
 #sidebar {
-  display: flex;
   flex-direction: column;
+  padding: 20px 20px 0;
   width: 210px;
+  background: #444;
 }
 
 /* spotify menu */
 .spotify-menu {
+  flex-direction: column;
   flex-grow: 1;
   background: #aa0000; /* debug */
 }
 
+.logo {
+  height: 50px;
+  background: #ccc;
+}
+
+.navigation {
+  height: 50px;
+  background: #aaa;
+}
+
+.playlist {
+  height: 50px;
+  background: #999;
+}
+
 /* spotify account */
 .account {
+  flex-direction: column;
+  justify-content: space-between;
   height: 60px;
   background: #550000; /* debug */
 }
@@ -48,13 +76,24 @@ body {
 
 /* main content top bar */
 .top-bar {
+  justify-content: flex-end;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
+  padding: 0 20px;
   width: 100%;
   height: 85px;
   background: #080b11;
   z-index: 2;
+}
+
+.btn-upgrade {
+  padding: 12px 40px;
+  color: #ededed;
+  border: 1px solid;
+  border-radius: 25px;
+  text-decoration: none;
 }
 
 /* main content scrollable section */
@@ -65,12 +104,47 @@ body {
   padding-top: 85px;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow-y: auto;
   z-index: 1;
+}
+
+.content-menu {
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 60px;
+}
+
+.content-menu ul {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content-menu ul li:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.content-home {
+  flex-direction: column;
+}
+
+.album-list {
+  flex-wrap: wrap;
+}
+
+.album-list li {
+  padding-right: 5px; /* debug */
+  flex-basis: calc(100% / 6);
+  height: 200px; /* debug */
+  background: dodgerblue; /* debug */
+  border: 1px solid #fff; /* debug */
 }
 
 /* FOOTER */
 #player {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
   height: 80px;
   background: #272727;
 }

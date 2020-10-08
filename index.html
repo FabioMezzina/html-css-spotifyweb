@@ -8,40 +8,147 @@
   </head>
   <body>
     <!-- Spotify application -->
-    <div id="app">
+    <div id="app" class="flex">
       <!-- MAIN WINDOW -->
-      <main id="main-window">
+      <main id="main-window" class="flex">
         <!-- SIDEBAR -->
-        <aside id="sidebar">
-          <div class="spotify-menu">
-
+        <aside id="sidebar" class="flex">
+          <div class="spotify-menu flex">
+            <div class="logo">
+              logo
+            </div>
+            <ul class="navigation">
+              navigation
+            </ul>
+            <ul class="playlist">
+              playlist
+            </ul>
           </div>
 
-          <div class="account">
-
+          <div class="account flex">
+            <div class="install">
+              install
+            </div>
+            <div class="artist">
+              artist
+            </div>
           </div>
         </aside>
 
         <!-- MAIN CONTENT -->
         <div id="content">
           <!-- main content top bar -->
-          <div class="top-bar">
-
+          <div class="top-bar flex">
+            <a href="#" class="btn-upgrade">EFFETTUA L'UPGRADE</a>
           </div>
           <!-- main content scrollable section -->
           <div class="content-scrollable">
-            <div class="content-menu">
-
+            <!-- content menu -->
+            <div class="content-menu flex">
+              <ul class="flex unstyled-list">
+                <li>
+                  <a href="#">IN EVIDENZA</a>
+                </li>
+                <li>
+                  <a href="#">PODCAST</a>
+                </li>
+                <li>
+                  <a href="#">CLASSIFICHE</a>
+                </li>
+                <li>
+                  <a href="#">GENERI E MOOD</a>
+                </li>
+                <li>
+                  <a href="#">NUOVE USCITE</a>
+                </li>
+                <li>
+                  <a href="#">SCOPRI</a>
+                </li>
+              </ul>
             </div>
-            <div class="content-home">
-              
+            <!-- content home -->
+            <div class="content-home flex">
+              <div class="category">
+                <h2>Recently played</h2>
+                <ul class="album-list flex unstyled-list">
+                  <li>
+                    <a href="#">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="category">
+                <h2>Creato per John Doe</h2>
+                <ul class="album-list flex unstyled-list">
+                  <li>
+                    <a href="#">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="category">
+                <h2>Artisti più popolari</h2>
+                <ul class="album-list flex unstyled-list">
+                  <li>
+                    <a href="#">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </main>
 
       <!-- PLAYER SECTION -->
-      <footer id="player">
+      <footer id="player" class="flex">
+        <div class="song">
+          song
+        </div>
+        <div class="controls">
+          controls
+        </div>
+        <div class="volume">
+          volume
+        </div>
       </footer>
     </div>
   </body>
