@@ -5,7 +5,7 @@
 }
 
 body {
-  font-style: sans-serif;
+      font-family: 'Montserrat', sans-serif;
   color: #fff; /* debug */
 }
 
@@ -16,6 +16,22 @@ body {
 
 .unstyled-list {
   list-style: none;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
 }
 
 /* SPOTIFY */
@@ -41,17 +57,42 @@ body {
 .spotify-menu {
   flex-direction: column;
   flex-grow: 1;
-  background: #aa0000; /* debug */
+  background: #000; /* debug */
+  color: rgba(255, 255, 255, 0.5);
 }
 
+/* logo */
 .logo {
-  height: 50px; /* debug */
-  background: #ccc;
+  height: 40px;
 }
 
+.logo img {
+  max-height: 40px;
+}
+
+.logo-small {
+  display: none;
+}
+
+/* navigation */
 .navigation {
-  height: 50px; /* debug */
-  background: #aaa;
+  flex-direction: column;
+  background: black;
+}
+
+.nav-sec {
+  align-items: center;
+  flex-basis: 25px;
+}
+
+.nav-sec img {
+  height: 25px;
+  opacity: .5;
+}
+
+.nav-sec span {
+  font-size: 12px;
+  margin-left: 5px;
 }
 
 .playlist {
@@ -161,9 +202,34 @@ body {
 
 /* SMALL SCREEN DEVICES */
 @media screen and (max-width: 600px) {
+  /* SIDEBAR */
   #sidebar {
     flex-basis: 50px;
     padding: 5px 10px;
+  }
+
+  /* logo */
+  .logo {
+    justify-content: center;
+    margin-bottom: 15px;
+    height: 30px;
+  }
+
+  .logo-full {
+    display: none;
+  }
+
+  .logo .logo-small {
+    display: block;
+    max-height: 30px;
+  }
+
+  .nav-sec {
+    justify-content: center;
+  }
+
+  .nav-sec span {
+    display: none;
   }
 
   .playlist {
