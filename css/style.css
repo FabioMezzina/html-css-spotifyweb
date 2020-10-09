@@ -24,9 +24,14 @@ h3 {
   font-size: 14px;
 }
 
+h4 {
+  font-size: 12px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+  cursor: default;
 }
 
 /* UTILITIES */
@@ -288,6 +293,48 @@ a {
   padding: 20px 10px;
   height: 80px;
   background: #272727;
+}
+
+.song {
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song img {
+  width: 40px;
+}
+
+.track {
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.track p {
+  font-size: 10px;
+}
+
+.fa-heart {
+  margin-right: 10px;
+}
+
+#player a {
+  transition: .1s;
+}
+
+#player a:hover,
+#player a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+#player a.track-title:hover,
+#player a.track-title:focus {
+  text-decoration: underline;
+}
+
+#player a:focus .fa-heart {
+  color: #acfe2e;
 }
 
 /* TABLET DEVICES */
