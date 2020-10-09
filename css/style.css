@@ -389,7 +389,7 @@ a {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(50%, -25%);
+    transform: translate(50%, -26%);
     height: 10px;
     width: 10px;
     background-color: #bababa;
@@ -407,6 +407,17 @@ a {
 
 .progress-bar:hover .actual-bar {
   background-color: #acfe2e;
+}
+
+/* volume section */
+.volume {
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 200px;
+}
+
+.volume .progress-bar {
+  flex-basis: 50%;
 }
 
 /* TABLET DEVICES */
