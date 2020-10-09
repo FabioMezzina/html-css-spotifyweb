@@ -398,6 +398,7 @@ a {
 
 .time {
   flex-basis: 5%;
+  font-size: 10px;
 }
 
 .progress-bar {
