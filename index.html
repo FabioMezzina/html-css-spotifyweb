@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fonts -->
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
      <!-- icons -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
      <!-- style -->
@@ -19,35 +19,73 @@
         <!-- SIDEBAR -->
         <aside id="sidebar" class="flex">
           <div class="spotify-menu flex">
-            <div class="logo flex mb30">
-                <img class="logo-full" src="./img/logo.svg" alt="Logo">
-                <img class="logo-small" src="./img/logo-small.svg" alt="Logo">
-            </div>
-            <ul class="navigation flex unstyled-list mb20">
-              <li class="nav-sec flex mb10">
-                <img src="./img/home.svg" alt="Home">
-                <span>Home</span>
+            <a href="#"0 class="logo flex mb30 pl20">
+              <img class="logo-full" src="./img/logo.svg" alt="Logo">
+              <img class="logo-small" src="./img/logo-small.svg" alt="Logo">
+            </a>
+            <ul class="navigation unstyled-list mb20">
+              <li class="mb10">
+                <a href="#" class="nav-sec flex pl20">
+                  <img src="./img/home.svg" alt="Home">
+                  <span>Home</span>
+                </a>
               </li>
-              <li class="nav-sec flex mb10">
-                <img src="./img/search.svg" alt="Search.svg">
-                <span>Cerca</span>
+              <li class="mb10">
+                <a href="#" class="nav-sec flex pl20">
+                  <img src="./img/search.svg" alt="Search.svg">
+                  <span>Cerca</span>
+                </a>
               </li>
-              <li class="nav-sec flex mb10">
-                <img src="./img/libreria.svg" alt="Library">
-                <span>La tua libreria</span>
+              <li class="mb10">
+                <a href="#" class="nav-sec flex pl20">
+                  <img src="./img/libreria.svg" alt="Library">
+                  <span>La tua libreria</span>
+                </a>
               </li>
             </ul>
-            <ul class="playlist">
-              <h3>PLAYLIST</h3>
+            <ul class="playlist-menu">
+              <h3 class="mb10">PLAYLIST</h3>
+              <ul class="unstyled-list">
+                <li class="mb10">
+                  <a href="#" class="flex new-playlist pl20">
+                    <i class="fas fa-plus-square"></i>
+                    <span>Crea playlist</span>
+                  </a>
+                </li>
+                <li class="mb10">
+                  <a href="#" class="pl20">Nome playlist</a>
+                </li>
+                <li class="mb10">
+                  <a href="#" class="pl20">Nome playlist</a>
+                </li>
+                <li class="mb10">
+                  <a href="#" class="pl20">Nome playlist</a>
+                </li>
+                <li class="mb10">
+                  <a href="#" class="pl20">Nome playlist</a>
+                </li>
+                <li class="mb10">
+                  <a href="#" class="pl20">Nome playlist</a>
+                </li>
+                <li class="mb10">
+                  <a href="#" class="pl20">Nome playlist</a>
+                </li>
+                <li class="mb10">
+                  <a href="#" class="pl20">Nome playlist</a>
+                </li>
+              </ul>
             </ul>
           </div>
           <div class="account flex">
-            <div class="install">
-              install
-            </div>
-            <div class="artist">
-              artist
-            </div>
+            <a href="#" class="install">
+              <i class="far fa-arrow-alt-circle-down"></i>
+              <span>Installa app</span>
+            </a>
+            <hr>
+            <a href="#" class="account-name flex">
+              <img src="./img/profile.svg" alt="Profile">
+              <h3>John Doe</h3>
+            </a href="#">
           </div>
         </aside>
 
