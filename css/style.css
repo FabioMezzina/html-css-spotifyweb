@@ -67,6 +67,10 @@ a {
   padding-left: 20px;
 }
 
+.round {
+  border-radius: 50%;
+}
+
 /* SPOTIFY */
 #app {
   flex-direction: column;
@@ -114,7 +118,7 @@ a {
 .nav-sec {
   align-items: center;
   flex-basis: 25px;
-  border-left: 2px solid transparent;
+  border-left: 3px solid transparent;
   transition: .2s;
 }
 
@@ -142,7 +146,7 @@ a {
 }
 
 .playlist-menu li a {
-  border-left: 2px solid transparent;
+  border-left: 3px solid transparent;
   transition: .2s;
 }
 
@@ -170,7 +174,7 @@ a {
 .navigation a:focus,
 .playlist-menu a:focus {
   color: rgba(255, 255, 255, 1);
-  border-left: 2px solid #acfe2e;
+  border-left: 3px solid #acfe2e;
 }
 
 /* spotify account */
@@ -258,6 +262,7 @@ a {
   overflow-y: auto;
 }
 
+/* content menu */
 .content-menu {
   justify-content: center;
   align-items: center;
@@ -274,24 +279,67 @@ a {
   margin-right: 20px;
 }
 
+/* content home */
 .content-home {
   flex-direction: column;
 }
 
+.category {
+  margin-bottom: 45px;
+}
+
 .album-list {
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .album-list li {
-  margin: 10px 0; /* debug */
   flex-basis: calc(100% / 6 - 20px);
-  height: 150px; /* debug */
-  background: dodgerblue; /* debug */
-  border: 1px solid #fff; /* debug */
 }
 
 .album-list li:not(:last-of-type) {
   margin-right: 20px;
+}
+
+.album-list a {
+  cursor: pointer;
+  display: block;
+}
+
+.album-list a:hover .overlay {
+  display: flex;
+}
+
+.album-over {
+  position: relative;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;;
+  background: rgba(0, 0, 0, .4);
+}
+
+.overlay .fa-play {
+  margin: auto;
+  font-size: 40px;
+}
+
+.album-list li img {
+  display: block;
+  max-width: 100%;
+}
+
+.album-list li h3 {
+  margin-bottom: 5px;
+}
+
+.album-list li p {
+  font-size: 12px;
 }
 
 /* FOOTER */
