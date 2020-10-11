@@ -275,6 +275,28 @@ a {
   flex-wrap: wrap;
 }
 
+.content-menu ul a {
+  position: relative;
+  cursor: pointer;
+  font-size: 12px;
+  transition: .2s;
+}
+
+.content-menu ul a:hover {
+  color: #fff;
+}
+
+.content-menu a:focus::after {
+  position: absolute;
+  bottom: -5px;
+  left: 30%;
+  content: '';
+  height: 2px;
+  width: 40%;
+  background-color: #acfe2e;
+  border-radius: 3px;
+}
+
 .content-menu ul li:not(:last-of-type) {
   margin-right: 20px;
 }
