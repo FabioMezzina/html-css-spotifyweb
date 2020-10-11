@@ -119,7 +119,7 @@ a {
   align-items: center;
   flex-basis: 25px;
   border-left: 3px solid transparent;
-  transition: .2s;
+  transition: color .2s, border-left .3s;
 }
 
 .nav-sec img {
@@ -210,6 +210,7 @@ a {
   height: 25px;
   width: 25px;
   border-radius: 50%;
+  transition: .2s;
 }
 
 .install:focus,
@@ -244,11 +245,17 @@ a {
   border: 1px solid;
   border-radius: 25px;
   text-decoration: none;
+  cursor: pointer;
   transition: .2s;
 }
 
 .btn-upgrade:hover {
   transform: scale(1.1);
+}
+
+.btn-upgrade:focus {
+  transform: scale(1.05);
+  color: #acfe2e;
 }
 
 /* main content scrollable section */
@@ -266,7 +273,8 @@ a {
 .content-menu {
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  margin: 0 5px 20px;
+  line-height: 2;
   height: 60px;
 }
 
@@ -375,7 +383,7 @@ a {
 
 /* song section */
 .song {
-  width: 200px;
+  flex-basis: 200px;
   justify-content: space-between;
   align-items: center;
 }
@@ -500,8 +508,20 @@ a {
 
 /* TABLET DEVICES */
 @media screen and (max-width: 1200px) {
+  /* album widths */
   .album-list li {
     flex-basis: calc(100% / 4 - 20px);
+    margin-bottom: 20px;
+  }
+
+  /* PLAYER */
+  .song {
+    justify-content: space-around;
+    flex-basis: 150px;
+  }
+
+  .volume {
+    flex-basis: 150px;
   }
 }
 
@@ -513,7 +533,12 @@ a {
     padding: 5px 10px;
   }
 
-  /* logo */
+  #sidebar .pl20,
+  .account {
+    padding: 0;
+  }
+
+  /* logo visibility*/
   .logo {
     justify-content: center;
     height: 30px;
@@ -528,6 +553,7 @@ a {
     max-height: 30px;
   }
 
+  /* nav sec visibility */
   .nav-sec {
     justify-content: center;
   }
@@ -540,7 +566,45 @@ a {
     display: none;
   }
 
+  /* account visibility */
+  .account .install span,
+  .account .account-name h3,
+  .account hr {
+    display: none;
+  }
+
+  .account {
+    align-items: center;
+  }
+
+  .account-name:hover img,
+  .account-name:focus img {
+    transform: scale(1.1);
+  }
+
+  /* album widths */
   .album-list li {
     flex-basis: calc(100% / 2 - 20px);
+  }
+
+  /* PLAYER */
+  .song .track-album,
+  .song .fa-folder,
+  .volume .fa-list-ul,
+  .volume .fa-desktop {
+    display: none;
+  }
+
+  .song {
+    justify-content: space-around;
+    flex-basis: 150px;
+  }
+
+  .controls {
+    flex-basis: 60%;
+  }
+
+  .volume {
+    flex-basis: 150px;
   }
 }
