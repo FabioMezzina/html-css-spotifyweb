@@ -235,7 +235,7 @@ a {
   padding: 0 35px;
   width: 100%;
   height: 85px;
-  background: #080b11;
+  background: rgba(8, 11, 17, 0.7); /* rendere in trasparenza */
   z-index: 1;
 }
 

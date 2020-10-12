@@ -1,0 +1,1 @@
+document.getElementById('first-title').innerHTML = 'Ascolta di nuovo';
