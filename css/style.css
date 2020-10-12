@@ -466,18 +466,6 @@ a {
   border-radius: 2px;
 }
 
-.bar-end {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(50%, -26%);
-  height: 10px;
-  width: 10px;
-  background-color: #bababa;
-  border-radius: 50%;
-}
-
 .time {
   flex-basis: 5%;
   font-size: 10px;
@@ -491,8 +479,17 @@ a {
   background-color: #acfe2e;
 }
 
-.progress-bar:hover .bar-end {
+.progress-bar:hover .actual-bar::after {
   display: block;
+  content:'';
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -26%);
+  height: 10px;
+  width: 10px;
+  background-color: #bababa;
+  border-radius: 50%;
 }
 
 /* volume section */
