@@ -585,8 +585,6 @@ a {
   }
 
   /* PLAYER */
-  .song .track-album,
-  .song .fa-folder,
   .volume .fa-list-ul,
   .volume .fa-desktop {
     display: none;
@@ -603,5 +601,10 @@ a {
 
   .volume {
     flex-basis: 150px;
+  }
+
+  .ico {
+    flex-direction: column;
+    justify-content: center;
   }
 }
